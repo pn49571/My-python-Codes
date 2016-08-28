@@ -1,6 +1,0 @@
-INSERT INTO Destination SELECT * FROM Source;
-
-
-#Here,
-     Destination is table to be written
-     Source is the table which values are copied
