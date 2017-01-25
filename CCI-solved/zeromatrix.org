@@ -1,0 +1,40 @@
+#+BEGIN_SRC python :results output :session py
+table= [ [ 0 for i in range(3) ] for j in range(3) ]
+for row in table:
+    print(row)
+#+END_SRC
+
+#+RESULTS:
+:
+: ... ... [0, 0, 0]
+: [0, 0, 0]
+: [0, 0, 0]
+
+
+#+BEGIN_SRC python :results output :session py
+print(table)
+#+END_SRC
+
+#+RESULTS:
+: [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+#+BEGIN_SRC python :results output :session py
+table1= [ [ i for i in range(3) ] for j in range(3) ]
+print(table1)
+#+END_SRC
+
+#+RESULTS:
+:
+: [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+
+
+#+BEGIN_SRC python :results output :session py
+if (0 in [j for i in table1 for j in i]) == True:
+        table2 = [ [ 0 for i in range(3) ] for j in range(3) ]
+        print(table2)
+
+#+END_SRC
+
+#+RESULTS:
+:
+: ... ... ... [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
