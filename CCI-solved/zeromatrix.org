@@ -1,5 +1,5 @@
 #+BEGIN_SRC python :results output :session py
-table= [ [ 0 for i in range(3) ] for j in range(3) ]
+table= [[ 0 for i in range(3) ] for j in range(3) ]
 for row in table:
     print(row)
 #+END_SRC
