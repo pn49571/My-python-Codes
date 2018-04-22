@@ -1,2 +1,0 @@
-with open('E:/Cyber/LUKPreprocess/lurkparse3.txt', 'w') as f:
-    f.writelines(final)
