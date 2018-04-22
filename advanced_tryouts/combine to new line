@@ -1,0 +1,9 @@
+data = open("E:/Cyber/LUKPreprocess/lurkparse2.txt").readlines()
+for n,line in enumerate(data):
+    if line.startswith("Frame"):
+       data[n] = "\n"+line.rstrip()
+    else:
+       data[n]=line.rstrip()
+final = '|'.join(data)
+with open('E:/Cyber/LUKPreprocess/lurkparse3.txt', 'w') as f:
+    f.writelines(final)
