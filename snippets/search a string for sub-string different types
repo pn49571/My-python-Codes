@@ -1,0 +1,28 @@
+find(str, beg=0, end=len(string)): Determines whether str occurs in a string and outputs the index of the location. 
+You can limit the search by specifying a beginning index using beg or a ending index using end.
+
+index(str, beg=0, end=len(string)): Provides the same functionality as find(), but raises an exception when str isn’t found.
+
+replace(old, new [, max]): Replaces all occurrences of the character sequence specified by old in a 
+string with the character sequence specified by new. 
+You can limit the number of replacements by specifying a value for max.
+
+rfind(str, beg=0, end=len(string)): Provides the same functionality as find(), 
+but searches backward from the end of the string instead of the beginning.
+
+rindex(str, beg=0, end=len(string)): Provides the same functionality as index(), 
+but searches backward from the end of the string instead of the beginning.
+
+startswith(prefix, beg=0, end=len(string)): Returns True when a string begins 
+with the characters specified by prefix. You can limit the check by specifying a 
+beginning index using beg or an ending index using end.
+
+
+SearchMe = "The apple is red and the berry is blue!"
+print(SearchMe.find("is"))
+print(SearchMe.rfind("is"))
+print(SearchMe.count("is"))
+print(SearchMe.startswith("The"))
+print(SearchMe.endswith("The"))
+print(SearchMe.replace("apple", "car")
+  .replace("berry", "truck"))
