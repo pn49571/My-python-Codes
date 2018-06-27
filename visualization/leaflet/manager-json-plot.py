@@ -12,13 +12,13 @@ lats = []
 reason = []
 
 
-os.chdir("C:\\Users\\SThangaraj\\Downloads\\manager-flashes")
+os.chdir("XXXXXXXXXXXXXXXXXX")
 for file in glob.glob("*.json"):
         f=open(file,'r')
         for line in f:
                 try:
                     decoded = json.loads(line)
-                    l = decoded['portions']
+                    l = decoded['XXXXXXXXXXXX']
                     for item1 in l:
                             lons.append(item1['longitude'])
                             lats.append(item1['latitude'])
@@ -37,5 +37,5 @@ for i in range(0, len(lats)):
                         radius=1,
                         fill_color="#3db7e4",).add_to(ice_map)
 
-ice_map.save(outfile='map-manager.html')
-webbrowser.open_new_tab('map-manager.html')
+ice_map.save(outfile='XXXXXXXXXX.html')
+webbrowser.open_new_tab('XXXXXXXXXXXX.html')
