@@ -17,20 +17,20 @@ def produceMap(lat,lon):
 	map.drawmapboundary(fill_color="#DDEEFF")
 	xbuddy, ybuddy = map(lat, lon)
 	map.plot(xbuddy, ybuddy, '*', markersize=5,color='red')
-	plt.title("LXmanager output")
-	plt.savefig('lxmanager.png',bbox_inches='tight')
+	plt.title("XXXXXXXXXXX")
+	plt.savefig('XXXXXXXXXXX.png',bbox_inches='tight')
 
 
 lats = []
 lons = []
 
-os.chdir("C:\\Users\\SThangaraj\\Documents\\Flashes")
+os.chdir("XXXXXXXXXXXXXXX")
 for file in glob.glob("*.json"):
     print(file)
     f = open(file, 'r')
     for line in f:
         decoded = json.loads(line)
-        l = decoded['portions']
+        l = decoded['XXXXXXXXXXXXX']
         for item1 in l:
             lons.append(item1['longitude'])
             lats.append(item1['latitude'])
