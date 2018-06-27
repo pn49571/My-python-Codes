@@ -12,15 +12,15 @@ lats = []
 reason = []
 
 
-os.chdir("C:\\Users\\SThangaraj\\Documents\\Rad-52\\Rad-5051")
+os.chdir("XXXXXXXXXXXXXXXXXX")
 for file in glob.glob("*.json"):
         f=open(file,'r')
         for line in f:
                 try:
                     decoded = json.loads(line)
-                    l = decoded['portions']
+                    l = decoded['XXXXXXXXXXXXXX']
                     for item1 in l:
-                            reason.append(item1['ACriteria'])
+                            reason.append(item1['XXXXXXXXXX'])
                             lons.append(item1['longitude'])
                             lats.append(item1['latitude'])
                 except ValueError:
