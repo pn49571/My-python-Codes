@@ -5,7 +5,7 @@ import webbrowser
 
 multipolygon = ogr.Geometry(ogr.wkbMultiPolygon)
 
-with open('E:/En/LxCellTracker/ExportLocal/LatestAllWarningBoxes.JSON') as f:
+with open('XXXXXXXX.JSON') as f:
     for line in f:
         list_json = (json.loads(line))
         count = 0
