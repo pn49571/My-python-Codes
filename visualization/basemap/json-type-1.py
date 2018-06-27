@@ -25,14 +25,14 @@ def produceMap(lat,lon):
 lons = []
 lats = []
 
-os.chdir("C:\\Users\\SThangaraj\\Documents\\Flashes\\")
+os.chdir("XXXXXXXXXXXXXX")
 for file in glob.glob("*.json"):
 	print(file)
 	f = open(file,'r')
 	for line in f:
             try:
                 decoded = json.loads(line)
-                l = decoded['portions']
+                l = decoded['XXXXXXX']
                 for item1 in l:
                         lons.append(item1['longitude'])
                         lats.append(item1['latitude'])
