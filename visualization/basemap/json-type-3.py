@@ -24,7 +24,7 @@ def produceMap(lat,lon):
 lons = []
 lats = []
 
-os.chdir("C:\\Users\\SThangaraj\\Documents\\lxprocessor-HighAmp\\En2-Export\Export")
+os.chdir("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 for file in glob.glob("*.json"):
 	print(file)
 	f = open(file, 'r')
